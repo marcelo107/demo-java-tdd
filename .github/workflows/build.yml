@@ -16,6 +16,7 @@ jobs:
 
       - name: Maven Build
         run: |
+          cd bitcoin-converter-svc-lib
           mvn -B clean package
           mkdir staging
           cp target/*.jar staging
